@@ -625,6 +625,14 @@ define Device/oraybox_x1
 endef
 TARGET_DEVICES += oraybox_x1
 
+define Device/oraybox_x4c
+  IMAGE_SIZE := 15936k
+  DEVICE_VENDOR := OrayBox
+  DEVICE_MODEL := X4C
+  DEVICE_PACKAGES:= kmod-usb2 kmod-usb-ohci kmod-usb-serial-option kmod-usb-net-cdc-ether
+endef
+TARGET_DEVICES += oraybox_x4c
+
 define Device/rakwireless_rak633
   IMAGE_SIZE := 7872k
   DEVICE_VENDOR := Rakwireless
@@ -1311,7 +1319,7 @@ TARGET_DEVICES += xiaomi_miwifi-nano
 define Device/xiaomi_mi-ra75
   IMAGE_SIZE := 14976k
   DEVICE_VENDOR := Xiaomi
-  DEVICE_MODEL := MiWiFi Range Extender AC1200 
+  DEVICE_MODEL := MiWiFi Range Extender AC1200
   DEVICE_VARIANT := RA75
   DEVICE_PACKAGES := kmod-mt76x2
   SUPPORTED_DEVICES += xiaomi,mira75

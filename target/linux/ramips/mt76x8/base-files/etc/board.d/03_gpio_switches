@@ -33,6 +33,11 @@ teltonika,rut9x6)
 	ucidef_add_gpio_switch "esim_sel" "SIM select" "esim_sel" "0"
 	ucidef_add_gpio_switch "relay" "Relay" "relay" "0"
 	;;
+oraybox,x4c)
+	ucidef_add_gpio_switch "modem_power" "Modem power" "cpe-pwr" "1"
+	ucidef_add_gpio_switch "modem_reset" "Modem reset" "modem_reset" "0"
+	ucidef_add_gpio_switch "switch_sim" "SIM select" "switch_sim" "0"
+	;;
 esac
 
 board_config_flush
